@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-image: url("unnamed.jpg") ;
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.title {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #f3aa24;
+}
+
+.inputs {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs input {
+    outline:none;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.adress {
+    display: flex;
+    color: white;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.adress p {
+    margin-right: 20px;
+}
+
+label {
+    padding: 0 10px 0;
+}
+
+span {
+    padding-left: 5px;
+}
+
+.adress input {
+    display: none;
+}
+span {
+    position: relative; /* Относительное позиционирование */
+    display: inline-block; /* Строчно-блочный элемент */
+    top: 2px;
+    width: 5px; height: 10px; /* Размеры */
+    background: transparent; /* Серый цвет фона */
+    border-radius: 50%; /* Круглый переключатель */
+    border: 2px solid white;
+
+}
+
+.adress input:checked + span::before {
+    content: '';
+    position: absolute;
+    left: 3px; top: 3px;
+    background: #fff;
+    width: 4px; height: 4px;
+    border-radius: 50%;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+button {
+    margin: 10px;
+    background-color: #f3aa24;
+    border: none;
+    width: 270px;
+    height: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.message {
+    position: absolute;
+    top: 350px;
+}
+
+
+
+
+
+
+
+
+
+
